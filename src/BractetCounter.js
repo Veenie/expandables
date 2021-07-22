@@ -23,7 +23,7 @@ export default BracketMatcher
 
 //Ruby solution:
 
-// def BracketMatcher(str)
+// def bracketMatcher(str)
 // count=0
 // str.chars.each do |x|
 //     if x=="("
