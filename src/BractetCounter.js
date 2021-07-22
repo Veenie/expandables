@@ -20,3 +20,21 @@ function BracketMatcher(str) {
       else return 0
     }
 export default BracketMatcher    
+
+//Ruby solution:
+
+// def BracketMatcher(str)
+// count=0
+// str.chars.each do |x|
+//     if x=="("
+//         count+=1
+//     elsif x==")"
+//         count-=1
+//     end 
+// end 
+//     if count==0
+//         return 1
+//     else 
+//         return 0
+//     end 
+// end
