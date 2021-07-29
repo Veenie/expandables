@@ -8,3 +8,4 @@ function findChar(str) {
     return count    
 }
 
+export default findChar
