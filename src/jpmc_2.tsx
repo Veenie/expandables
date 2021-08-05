@@ -31,8 +31,8 @@
 //    * Render Graph react component with state.data parse as property data
 //    */
 //   renderGraph() {
-//       if (this.state.showGraph)
-//     {return (<Graph data={this.state.data}/>)}
+//     if (this.state.showGraph){
+//       return (<Graph data={this.state.data}/>)}
 //   }
 
 //   /**
@@ -42,7 +42,7 @@
 //     DataStreamer.getData((serverResponds: ServerRespond[]) => {
 //       // Update the state by creating a new array of data that consists of
 //       // Previous data in the state and the new data from server
-//       this.setState({ data: [...this.state.data, ...serverResponds] });
+//       this.setState({ data: [...this.state.data, ...serverResponds], showGraph: true });
 //     });
 //   }
 
