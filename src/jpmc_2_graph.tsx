@@ -36,8 +36,8 @@
 
 //     const schema = {
 //       stock: 'string',
-//       top_ask_price: 'float',
-//       top_bid_price: 'float',
+//       top_ask_price: 'float'
+//       top_bid_price: 'float'
 //       timestamp: 'date',
 //     };
 
@@ -53,11 +53,11 @@
 //       elem.setAttribute('column-pivots', '["stock"]')
 //       elem.setAttribute('columns', '["top-ask-price"]')
 //       elem.setAttribute('row-pivots', '["timestamp"]')
-//       elem.setAttribute('aggregates', `{"stock":"distinct count",
-//       "top-ask-price":"avg"
-//       "top-bid-price":"avg"
-//       "timestamp":"distinct count"
-//     }`)
+//       elem.setAttribute('aggregates', `
+//       {"stock":"distinct count",
+//       "top_ask_price":"avg",
+//       "top_bid_price":"avg",
+//       "timestamp":"distinct count"}`);
 //     }
 //   }
 
