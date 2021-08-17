@@ -27,19 +27,17 @@ function factorialize(num) {
   factorialize(5);
 
   
-no comments, holder for desired results:
 
-function factorialize(num) {
+function refactorialize(num) {
   var result = num;
-  holder = [] 
+  var holder = [] 
   if (num === 0 || num === 1) 
     return 1; 
   while (num > 1) { 
     num--;
-    result * num;
+    result *= num;
     holder.push(num)
   }
-  return holder; 
-  return result;
+  return holder, result
 }
-factorialize(5);
+refactorialize(5);
