@@ -38,6 +38,6 @@ function refactorialize(num) {
     result *= num;
     holder.push(num)
   }
-  return holder, result
+  return holder && result
 }
 refactorialize(5);
