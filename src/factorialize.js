@@ -25,3 +25,21 @@ function factorialize(num) {
     return result; // 120
   }
   factorialize(5);
+
+  
+no comments, holder for desired results:
+
+function factorialize(num) {
+  var result = num;
+  holder = [] 
+  if (num === 0 || num === 1) 
+    return 1; 
+  while (num > 1) { 
+    num--;
+    result * num;
+    holder.push(num)
+  }
+  return holder; 
+  return result;
+}
+factorialize(5);
