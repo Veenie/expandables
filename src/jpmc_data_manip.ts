@@ -1,11 +1,14 @@
 import { ServerRespond } from './DataStreamer';
 
 export interface Row {
-  stock: string,
-  top_ask_price: number,
-  timestamp: Date,
-}
-
+    price_abc: number,
+    price_def: number,
+    ratio: number,
+    trigger_alert: number,
+    upper_bound: number,
+    lower_bound: number,
+    timestamp: Date,
+  }
 
 export class DataManipulator {
   static generateRow(serverResponds: ServerRespond[]): Row[] {
