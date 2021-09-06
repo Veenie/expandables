@@ -11,13 +11,20 @@ export interface Row {
   }
 
 export class DataManipulator {
-  static generateRow(serverResponds: ServerRespond[]): Row[] {
-    return serverResponds.map((el: any) => {
-      return {
-        stock: el.stock,
-        top_ask_price: el.top_ask && el.top_ask.price || 0,
-        timestamp: el.timestamp,
-      };
-    })
+  static generateRow(serverResponds: ServerRespond[]): Row {
+    const priceABC = (serverResponds[0].top_ask.price + serverResponds[0].top_bid.price)
+    const priceDEF = (serverResponds[1].top_ask.price + serverResponds[1].top_bid.price)
+    const ratio = priceABC / priceDEF
+    const upperBound = 1 + 0.05
+    const lowerBound = 1 - 0.05
+    return {
+      price_abc = priceABC,
+      price_def = priceDEF,
+      ratio,
+      upper_bound = upperBound,
+      lowerBound = lowerBound,
+      trigger alert: (ratio > upperBound || ratio < lowerBound)
+    }
+
   }
 }
