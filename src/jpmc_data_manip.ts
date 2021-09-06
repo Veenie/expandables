@@ -18,13 +18,15 @@ export class DataManipulator {
     const upperBound = 1 + 0.05
     const lowerBound = 1 - 0.05
     return {
-      price_abc = priceABC,
-      price_def = priceDEF,
+      price_abc: priceABC,
+      price_def: priceDEF,
       ratio,
-      upper_bound = upperBound,
-      lowerBound = lowerBound,
-      trigger alert: (ratio > upperBound || ratio < lowerBound)
-    }
+      timestamp: serverResponds[0].timestamp > serverResponds[1].timestamp ? 
+      serverResponds[0].timestamp : serverResponds[1].timestamp,
+      upper_bound: upperBound,
+      lower_bound: lowerBound,
+      trigger_alert: (ratio > upperBound || ratio < lowerBound) ? ratio : undefined
+  }
 
   }
 }
