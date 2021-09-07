@@ -1,13 +1,12 @@
-def array
-array = [23, 42, 12, 3]
+temparray = [23, 42, 12, 3]
 newArray = []
-for i in array
-    if i > newArray[0]
+for i in temparray
+    if newArray.empty?
         newArray.unshift(i)
-    elsif newArray.empty?
-        i >> newArray
+    elsif i > newArray [0]
+        newArray.push(i)
     else
-        newArray.push(i) 
+        newArray.unshift(i) 
     end
     print newArray
-end            
+end     
