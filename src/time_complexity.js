@@ -7,3 +7,6 @@ function stringIncludes(wrd, ltr){
     }
     return !!match
  	 }
+
+//less costly version
+
