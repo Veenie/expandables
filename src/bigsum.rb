@@ -4,3 +4,6 @@ def aVeryBigSum(ar)
     ar.each {|i| newAr+=i }
     return newAr
 end
+
+#alt solution
+# return ar.inject(:+)
