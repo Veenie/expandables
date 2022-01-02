@@ -1,12 +1,12 @@
 
-function solution(statues) {
+// function solution(statues) {
 
 
-    return (Math.max(...statues) - Math.min(...statues) + 1) - statues.length
+//     return (Math.max(...statues) - Math.min(...statues) + 1) - statues.length
     
     //calculate how many consecutive numbers should be there then subtract the number of values that are actually there
     
-    }
+    // }
     
     //java
     
